@@ -1,0 +1,15 @@
+<h1>Register</h1>
+@Html.ValidationSummary()
+<br/>
+@model RegisterViewModel
+<form action="/register" method="POST">
+    <label asp-for="UserName"></label><br/>
+    <input asp-for="UserName"/><br/><br/>
+    <label asp-for="Email"></label><br/>
+    <input asp-for="Email"/><br/><br/>
+    <label asp-for="Password"></label><br/>
+    <input asp-for="Password" /><br/><br/>
+    <label asp-for="Confirm"></label><br/>
+    <input asp-for="Confirm" /><br/><br/>
+    <input type="submit" value="Register" />
+</form>
